@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Donnell Rodriguez (Hujiang Yang)</title>
-  <meta name="description" content="Donnell Rodriguez (Hujiang Yang), independent software engineer and reinforcement learning engineer focused on medical AI inference deployment." />
+
+  <meta
+    name="description"
+    content="Donnell Rodriguez (Hujiang Yang), independent software engineer and reinforcement learning engineer focused on medical AI inference deployment, Linux GPU servers, and clinical demo system delivery."
+  />
 
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 920px;
+      max-width: 940px;
       margin: 48px auto;
       padding: 0 22px;
       line-height: 1.65;
@@ -30,7 +35,7 @@
 
     h2 {
       font-size: 26px;
-      margin: 42px 0 12px;
+      margin: 44px 0 12px;
     }
 
     h3 {
@@ -58,6 +63,14 @@
 
     li {
       margin-bottom: 5px;
+    }
+
+    code {
+      font-family: Consolas, Monaco, monospace;
+      font-size: 0.95em;
+      background: #f3f4f6;
+      padding: 1px 4px;
+      border-radius: 4px;
     }
 
     .hero {
@@ -103,10 +116,17 @@
       margin-bottom: 14px;
     }
 
+    .summary-box {
+      border-left: 4px solid #2563eb;
+      padding: 14px 18px;
+      background: #f8fafc;
+      margin: 24px 0;
+    }
+
     .skill-grid {
       display: grid;
-      grid-template-columns: 160px minmax(0, 1fr);
-      gap: 8px 18px;
+      grid-template-columns: 170px minmax(0, 1fr);
+      gap: 9px 18px;
       margin-top: 12px;
     }
 
@@ -152,7 +172,7 @@
         <h1>Donnell Rodriguez (Hujiang Yang)</h1>
 
         <div class="subtitle">
-          Independent Software Engineer | Reinforcement Learning Engineer | Medical AI Inference Deployment
+          Independent Software Engineer | Reinforcement Learning Engineer | Medical AI Inference Deployment Contractor
         </div>
 
         <p class="email">
@@ -160,20 +180,18 @@
         </p>
 
         <p>
-          I am an independent software engineer and reinforcement learning engineer focused on medical AI inference deployment,
-          Linux GPU server setup, frontend/backend integration, and research demo delivery.
+          I help research teams and medical AI projects turn prototype inference systems into deployable, testable,
+          and usable server-side applications.
         </p>
 
         <p>
-          My work focuses on turning AI research systems into usable engineering deployments, including FastAPI backend services,
-          React/TanStack frontend integration, Nginx deployment, PostgreSQL data persistence, RabbitMQ task queues, and DICOM/NIfTI
-          medical imaging workflows.
+          My work focuses on Linux GPU server deployment, FastAPI backend integration, React/TanStack frontend delivery,
+          Nginx reverse proxy configuration, PostgreSQL/RabbitMQ service integration, and DICOM/NIfTI medical imaging workflows.
         </p>
 
         <p>
-          I support university research and clinical demonstration projects by deploying AI inference models, configuring GPU servers,
-          integrating frontend/backend systems, and preparing reliable environments for doctors and research teams to test medical
-          imaging AI workflows.
+          I provide independent engineering support for university research and clinical demonstration projects, especially where
+          AI models need to be deployed onto real servers, connected with web interfaces, and prepared for customer or hospital-side evaluation.
         </p>
 
         <p class="links">
@@ -189,24 +207,63 @@
     <section class="section">
       <h2>Experience</h2>
 
-      <h3>Independent Software Engineer / Medical AI Inference Deployment Engineer</h3>
+      <h3>Independent Software Engineer / Medical AI Inference Deployment Contractor</h3>
       <p class="meta">2024 - Present</p>
 
       <p>
-        I provide engineering support for medical AI research and clinical demo systems. My recent work includes deploying
-        a medical image inference system on a Linux GPU server, configuring public domain access, enabling local 127.0.0.1
-        access for hospital-side usage, and preparing the system for future hospital LAN deployment.
+        I provide independent engineering support for AI research and medical imaging demonstration systems. My recent work includes
+        deploying a medical AI inference system on a Linux GPU server, configuring public domain access, enabling local
+        <code>127.0.0.1</code> access for hospital-side usage, and preparing the system for future hospital LAN deployment.
       </p>
 
+      <p>Representative responsibilities:</p>
+
       <ul>
-        <li>Deployed medical AI inference frontend/backend systems on Linux GPU servers.</li>
-        <li>Configured Nginx reverse proxy for public domain and local machine access.</li>
-        <li>Integrated React/TanStack frontend with FastAPI backend APIs.</li>
-        <li>Configured PostgreSQL-backed task and patient data workflows.</li>
-        <li>Supported RabbitMQ-based serial inference task queue design.</li>
-        <li>Worked with DICOM upload, DICOM-to-NIfTI conversion, NIfTI candidate selection, and 3D result viewer delivery.</li>
-        <li>Added NIfTI review package download workflow for doctor-side verification.</li>
-        <li>Prepared deployment strategy for public domain, 127.0.0.1 local access, and future hospital LAN access.</li>
+        <li>Deployed medical AI inference frontend and backend services on Linux GPU servers.</li>
+        <li>Configured Nginx reverse proxy for public domain, local machine, and future hospital LAN access.</li>
+        <li>Integrated React/TanStack frontend workflows with FastAPI backend APIs.</li>
+        <li>Supported PostgreSQL-backed patient, task, file, and result workflows.</li>
+        <li>Supported RabbitMQ-based serial inference task queue design for GPU workload control.</li>
+        <li>Worked with DICOM upload, DICOM-to-NIfTI conversion, NIfTI candidate selection, nnUNet-style inference, segmentation masks, and 3D result viewer delivery.</li>
+        <li>Added doctor-facing NIfTI review package download workflow for manual verification and correction.</li>
+        <li>Updated frontend deployment strategy to use same-origin API requests instead of hardcoded server IPs.</li>
+        <li>Verified deployment through public domain access, local <code>127.0.0.1</code> access, health checks, authentication routing, and 3D result page testing.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Selected Project</h2>
+
+      <h3>Medical Imaging AI Inference System Deployment</h3>
+
+      <p>
+        A server deployment and integration project for a medical imaging AI workflow. The system supports DICOM upload,
+        NIfTI conversion, inference job creation, 3D result visualization, and doctor-side NIfTI review package download.
+      </p>
+
+      <p>Scope of work:</p>
+
+      <ul>
+        <li>Linux GPU server deployment</li>
+        <li>Frontend static build and Nginx release deployment</li>
+        <li>FastAPI backend integration verification</li>
+        <li>Public domain access configuration</li>
+        <li>Local Linux desktop access through <code>http://127.0.0.1/</code></li>
+        <li>Same-origin API configuration for domain, local, and future LAN access</li>
+        <li>DICOM/NIfTI workflow support</li>
+        <li>RabbitMQ serial inference queue support</li>
+        <li>3D medical result viewer workflow adjustment</li>
+        <li>Deployment verification and customer handoff preparation</li>
+      </ul>
+
+      <p>Outcome:</p>
+
+      <ul>
+        <li>Public demo access through HTTPS domain</li>
+        <li>Local machine access for hospital-side usage</li>
+        <li>Production frontend build no longer tied to fixed server IP</li>
+        <li>Prepared architecture for future hospital LAN access</li>
+        <li>Improved doctor-facing workflow for result review and NIfTI package download</li>
       </ul>
     </section>
 
@@ -214,41 +271,33 @@
       <h2>Technical Skills</h2>
 
       <div class="skill-grid">
-        <div class="skill-label">AI / RL</div>
-        <div>Reinforcement learning engineering, model inference workflow deployment, research demo engineering</div>
+        <div class="skill-label">AI / RL Engineering</div>
+        <div>Reinforcement learning systems, inference workflow deployment, research demo engineering, model-serving integration</div>
 
         <div class="skill-label">Backend</div>
-        <div>Python, FastAPI, PostgreSQL, RabbitMQ, REST APIs, background workers</div>
+        <div>Python, FastAPI, REST APIs, PostgreSQL, RabbitMQ, background workers, authentication, protected file access</div>
 
         <div class="skill-label">Frontend</div>
-        <div>React, TanStack, JavaScript, clinical workflow UI integration</div>
+        <div>React, TanStack, JavaScript, clinical workflow UI integration, 3D viewer integration</div>
 
         <div class="skill-label">Deployment</div>
-        <div>Linux GPU servers, Nginx, domain configuration, systemd, GitHub deployment workflows</div>
+        <div>Linux GPU servers, Nginx, domain configuration, same-origin API deployment, systemd, GitHub-based delivery workflow</div>
 
         <div class="skill-label">Medical Imaging</div>
-        <div>DICOM upload, DICOM-to-NIfTI workflow, nnUNet-style inference, 3D medical result viewer delivery</div>
+        <div>DICOM upload, DICOM ZIP/folder workflows, DICOM-to-NIfTI conversion, NIfTI candidate selection, segmentation result delivery, 3D medical viewer deployment</div>
       </div>
     </section>
 
     <section class="section">
-      <h2>Selected Project</h2>
+      <h2>Engineering Focus</h2>
 
-      <h3>Medical AI Inference Server Deployment</h3>
-
-      <p>
-        A deployment and integration project for a medical imaging AI workflow. The system supports DICOM upload,
-        NIfTI conversion, inference task creation, 3D result display, and doctor-side NIfTI review package download.
-      </p>
-
-      <ul>
-        <li>Deployed frontend and backend on an adv001 Linux GPU server.</li>
-        <li>Configured public domain access through Nginx.</li>
-        <li>Enabled local access through <code>http://127.0.0.1/</code> for hospital-side usage.</li>
-        <li>Updated frontend API strategy to use same-origin requests instead of hardcoded server IPs.</li>
-        <li>Verified frontend routes, backend health checks, and authentication API routing.</li>
-        <li>Prepared the system for future hospital LAN access.</li>
-      </ul>
+      <div class="summary-box">
+        <p>
+          I specialize in practical deployment work between AI research code and real customer-facing systems. My role is not limited
+          to writing isolated scripts; I help connect models, backend APIs, frontend workflows, server configuration, task queues,
+          file storage, and deployment verification into a working system that researchers, doctors, and customers can actually use.
+        </p>
+      </div>
     </section>
 
     <section class="section">
