@@ -8,13 +8,13 @@
 
   <meta
     name="description"
-    content="Donnell Rodriguez (Hujiang Yang), independent software engineer and reinforcement learning engineer focused on medical AI inference deployment, Linux GPU servers, and clinical demo system delivery."
+    content="Donnell Rodriguez (Hujiang Yang), independent software engineer and reinforcement learning engineer focused on RL systems, AI agents, open-source framework maintenance, and medical AI inference deployment."
   />
 
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 940px;
+      max-width: 960px;
       margin: 48px auto;
       padding: 0 22px;
       line-height: 1.65;
@@ -123,9 +123,13 @@
       margin: 24px 0;
     }
 
+    .project {
+      margin-top: 22px;
+    }
+
     .skill-grid {
       display: grid;
-      grid-template-columns: 170px minmax(0, 1fr);
+      grid-template-columns: 180px minmax(0, 1fr);
       gap: 9px 18px;
       margin-top: 12px;
     }
@@ -172,7 +176,7 @@
         <h1>Donnell Rodriguez (Hujiang Yang)</h1>
 
         <div class="subtitle">
-          Independent Software Engineer | Reinforcement Learning Engineer | Medical AI Inference Deployment Contractor
+          Independent Software Engineer | Reinforcement Learning Engineer | AI Agent and Medical AI Deployment Contractor
         </div>
 
         <p class="email">
@@ -180,18 +184,20 @@
         </p>
 
         <p>
-          I help research teams and medical AI projects turn prototype inference systems into deployable, testable,
-          and usable server-side applications.
+          I work as an independent software engineer focused on reinforcement learning systems, AI agent infrastructure,
+          open-source framework maintenance, and production-oriented AI model deployment.
         </p>
 
         <p>
-          My work focuses on Linux GPU server deployment, FastAPI backend integration, React/TanStack frontend delivery,
-          Nginx reverse proxy configuration, PostgreSQL/RabbitMQ service integration, and DICOM/NIfTI medical imaging workflows.
+          My work spans RL training frameworks, RLHF tooling, agent runtime systems, Linux GPU server deployment,
+          FastAPI backend integration, React frontend delivery, Nginx reverse proxy configuration,
+          PostgreSQL/RabbitMQ service integration, and DICOM/NIfTI medical imaging workflows.
         </p>
 
         <p>
-          I provide independent engineering support for university research and clinical demonstration projects, especially where
-          AI models need to be deployed onto real servers, connected with web interfaces, and prepared for customer or hospital-side evaluation.
+          I provide independent engineering support for university research and clinical demonstration projects,
+          especially where AI models need to be deployed onto real servers, connected with web interfaces,
+          and prepared for customer or hospital-side evaluation.
         </p>
 
         <p class="links">
@@ -207,28 +213,100 @@
     <section class="section">
       <h2>Experience</h2>
 
-      <h3>Independent Software Engineer / Medical AI Inference Deployment Contractor</h3>
-      <p class="meta">2024 - Present</p>
+      <h3>Independent Software Engineer / Reinforcement Learning Engineer</h3>
+      <p class="meta">2024 - Present | Remote / China</p>
 
       <p>
-        I provide independent engineering support for AI research and medical imaging demonstration systems. My recent work includes
-        deploying a medical AI inference system on a Linux GPU server, configuring public domain access, enabling local
-        <code>127.0.0.1</code> access for hospital-side usage, and preparing the system for future hospital LAN deployment.
+        I work on reinforcement learning systems, RLHF workflows, AI agent tooling, open-source framework maintenance,
+        and model deployment engineering.
       </p>
 
-      <p>Representative responsibilities:</p>
+      <p>Representative engineering responsibilities:</p>
 
       <ul>
+        <li>Built and maintained reinforcement learning and RLHF workflow components.</li>
+        <li>Worked with open-source RL frameworks including EnvPool, OpenRLHF, and TRL.</li>
+        <li>Maintained AI agent infrastructure and context-management tooling.</li>
+        <li>Participated in remote open-source AI agent development and maintenance, including OpenHands-related work.</li>
         <li>Deployed medical AI inference frontend and backend services on Linux GPU servers.</li>
         <li>Configured Nginx reverse proxy for public domain, local machine, and future hospital LAN access.</li>
         <li>Integrated React/TanStack frontend workflows with FastAPI backend APIs.</li>
         <li>Supported PostgreSQL-backed patient, task, file, and result workflows.</li>
         <li>Supported RabbitMQ-based serial inference task queue design for GPU workload control.</li>
         <li>Worked with DICOM upload, DICOM-to-NIfTI conversion, NIfTI candidate selection, nnUNet-style inference, segmentation masks, and 3D result viewer delivery.</li>
-        <li>Added doctor-facing NIfTI review package download workflow for manual verification and correction.</li>
-        <li>Updated frontend deployment strategy to use same-origin API requests instead of hardcoded server IPs.</li>
-        <li>Verified deployment through public domain access, local <code>127.0.0.1</code> access, health checks, authentication routing, and 3D result page testing.</li>
       </ul>
+    </section>
+
+    <section class="section">
+      <h2>Selected Open-Source / Public Works</h2>
+
+      <div class="project">
+        <h3><a href="https://github.com/sail-sg/envpool">EnvPool</a>: A Highly Parallel Reinforcement Learning Environment Execution Engine</h3>
+        <p>
+          EnvPool is a high-performance parallel environment executor for reinforcement learning workloads. It is designed to accelerate
+          RL agent training by executing environments efficiently through C++ thread pools, pybind11 integration, and vectorized environment interfaces.
+        </p>
+        <p>
+          My related work focuses on understanding, maintaining, and applying high-throughput RL environment execution patterns for reinforcement
+          learning training and deployment workflows.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3><a href="https://github.com/OpenRLHF/OpenRLHF">OpenRLHF</a></h3>
+        <p>
+          OpenRLHF is an open-source RLHF framework for post-training and alignment of large language models. My work involves framework maintenance,
+          usage, integration, and engineering support around RLHF-style training pipelines.
+        </p>
+        <ul>
+          <li>RLHF training workflow maintenance</li>
+          <li>PPO / reward model / policy optimization workflow understanding</li>
+          <li>Distributed training and deployment-oriented integration</li>
+          <li>Engineering support for model post-training workflows</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3><a href="https://github.com/huggingface/trl">TRL</a></h3>
+        <p>
+          TRL is a reinforcement learning and fine-tuning library for transformer language models. My related work includes maintaining and working
+          with TRL-style training workflows for model alignment and reinforcement learning fine-tuning.
+        </p>
+        <ul>
+          <li>RL fine-tuning workflow engineering</li>
+          <li>Transformer model post-training workflows</li>
+          <li>Alignment pipeline integration</li>
+          <li>Practical experimentation and maintenance support</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3><a href="https://github.com/All-Hands-AI/OpenHands">OpenHands</a></h3>
+        <p>
+          OpenHands is an open-source AI agent platform for software engineering automation. I participated in remote open-source maintenance
+          and AI agent engineering work, including agent runtime workflows and integration-oriented development.
+        </p>
+        <ul>
+          <li>AI agent development</li>
+          <li>Remote open-source collaboration</li>
+          <li>Agent workflow maintenance</li>
+          <li>Tool-use and software engineering automation systems</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3><a href="https://github.com/donnell-rodriguez/openclaw-context-compactor">OpenClaw Context Compactor</a></h3>
+        <p>
+          OpenClaw Context Compactor is a tool for compacting AI agent conversation context into structured state for smaller prompts,
+          lower token usage, and more stable agent runs.
+        </p>
+        <ul>
+          <li>AI agent context management</li>
+          <li>Prompt and memory compaction</li>
+          <li>Structured state representation</li>
+          <li>Long-running agent stability</li>
+        </ul>
+      </div>
     </section>
 
     <section class="section">
@@ -268,11 +346,24 @@
     </section>
 
     <section class="section">
+      <h2>Education</h2>
+
+      <h3>Dalian University of Technology</h3>
+      <p class="meta">Dalian, China</p>
+
+      <p>Master of Computer Science, 2022 - 2025</p>
+      <p>Bachelor of Computer Science, 2018 - 2022</p>
+    </section>
+
+    <section class="section">
       <h2>Technical Skills</h2>
 
       <div class="skill-grid">
-        <div class="skill-label">AI / RL Engineering</div>
-        <div>Reinforcement learning systems, inference workflow deployment, research demo engineering, model-serving integration</div>
+        <div class="skill-label">Reinforcement Learning</div>
+        <div>RL systems, RLHF workflows, PPO-style training, reward modeling workflows, model alignment, high-throughput environment execution</div>
+
+        <div class="skill-label">AI Engineering</div>
+        <div>Model inference deployment, LLM post-training workflow integration, AI agent systems, tool-use agents, context compaction</div>
 
         <div class="skill-label">Backend</div>
         <div>Python, FastAPI, REST APIs, PostgreSQL, RabbitMQ, background workers, authentication, protected file access</div>
